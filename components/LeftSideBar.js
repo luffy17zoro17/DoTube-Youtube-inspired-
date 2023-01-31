@@ -19,7 +19,11 @@ const LeftSideBar = () => {
       <div className="w-[17rem] rounded-tr-3xl text-yellow-200
       bg-gradient-to-r from-transparent to-black shadow-xl
       shadow-black
-      fixed top-[3.5rem] bottom-0 hover:overflow-y-auto
+      fixed top-[3.5rem] bottom-0
+      overflow-y-scroll
+
+      lg:overflow-y-hidden 
+      hover:overflow-y-scroll
        hidden md:flex">
        <div className="">  
         {AllLeftValues.map((item)=>(
